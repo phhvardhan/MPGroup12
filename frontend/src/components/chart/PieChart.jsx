@@ -5,7 +5,7 @@ import { CChartPie } from '@coreui/react-chartjs'
 const Charts = () => {
   return (
     
-        <CCard className="mb-1">
+        <CCard className="h">
           <CCardHeader>Pie Chart</CCardHeader>
           <CCardBody>
             <CChartPie
