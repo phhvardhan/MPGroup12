@@ -5,14 +5,12 @@ import "./home.css";
 import {userData} from "../../dummyData";
 import WidgetSm from '../../components/widgetSm/WidgetSm';
 import WidgetLg from '../../components/widgetLg/WidgetLg';
-import PieChart from '../../components/chart/PieChart';
-import Bargraph from '../../components/chart/Bargraph'
+import Combo from '../../components/chart/Combo';
 const Home = ({failCount,passCount, Registered}) => {
     return ( 
         <div className='home'>
             <FeaturedInfo  failCountData={failCount} passCountData={passCount} RegisteredData={Registered} />
-            <PieChart/>
-            <Bargraph/>
+            <Combo />
             <Chart data={userData} title="User Analytics" grid datakey="Active User" />
             <div className="homeWidgets">
                 <WidgetSm />

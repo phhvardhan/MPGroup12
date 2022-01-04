@@ -10,6 +10,7 @@ class App extends Component {
     fail_count: null,
     pass_count:null,
     total_resgistered:null,
+    subject: [],
   }
 
 
@@ -23,7 +24,7 @@ class App extends Component {
     fetch( `http://127.0.0.1:8000/subj/1`,{
             method: "GET",
         }).then(resp => resp.json())
-        // .then(resp => console.log(resp["Semester PerFormance"]))
+        .then(resp => console.log(resp))
         .then(res => this.setdataintoDAta(res["Semester PerFormance"]))
         .catch(error => console.log(error))
   }

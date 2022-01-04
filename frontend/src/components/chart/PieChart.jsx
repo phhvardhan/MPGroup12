@@ -1,12 +1,10 @@
 import React from 'react'
-import { CCard, CCardBody, CCol, CCardHeader, CRow } from '@coreui/react'
-import { CChartBar, CChartPie } from '@coreui/react-chartjs'
+import { CCard, CCardBody, CCardHeader} from '@coreui/react'
+import { CChartPie } from '@coreui/react-chartjs'
 
 const Charts = () => {
   return (
-    <CRow>
-      
-      <CCol xs={2}>
+    
         <CCard className="mb-1">
           <CCardHeader>Pie Chart</CCardHeader>
           <CCardBody>
@@ -45,8 +43,6 @@ const Charts = () => {
             />
           </CCardBody>
         </CCard>
-      </CCol>
-    </CRow>
   )
 }
 

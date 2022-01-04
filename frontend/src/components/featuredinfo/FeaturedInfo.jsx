@@ -1,5 +1,4 @@
  import React, {Component} from 'react';
- import { ArrowDownward, ArrowUpward } from '@material-ui/icons';
  import "./featuredinfo.css"
  class FeaturedInfo extends Component {
      render(){
